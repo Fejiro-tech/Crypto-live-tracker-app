@@ -1,0 +1,103 @@
+.main {
+    color: #fff;
+}
+
+.content {
+    margin-top: 20%;
+}
+
+.content h1 {
+    font-size: 44px;
+}
+
+.content h1 span {
+    color: #ff9800; 
+}
+
+.indicator {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.live-indicator {
+    display: inline-block;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 6px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+strong {
+    color: #ff9800; 
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff9800;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.coin-list {
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    display: flex;
+
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0 6px;
+    color: #ff960b;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.coin-list div h3 {
+    color: #fff;
+}
+
+.coin img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 764px) {
+    .coin-list {
+       flex-direction: row;
+       right: 0;
+    }
+}
+
+@media (min-width: 765px) {
+
+    .content {
+        margin-top: 15%;
+    }
+    
+    .content h1 {
+        font-size: 66px;
+    }
+
+    .coin {
+       margin: 0 8px;
+       padding: 10px 30px;
+    }
+
+}

@@ -1,0 +1,132 @@
+.navbar {
+    
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar nav {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+  
+.navbar a:visited {
+    color: inherit;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+.navbar .btn  {
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    border-radius: 20px;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    color: #ff9800;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+      display: block; /* hide menu on smaller screens */
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    background: rgb(3, 3, 43);
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    transition: right 0.3s ease;
+    z-index: 300;
+    padding: 30px;
+
+  }
+  
+  .sidebar.open {
+    right: 0;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 50px;
+    padding: 0;
+   
+  }
+
+  /* Overlay Blur */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 200;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .sidebar {
+      display: none; /* sidebar not needed on large screens */
+    }
+
+    .overlay {
+        display: none;
+    }
+}
