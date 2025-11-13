@@ -50,10 +50,12 @@ strong {
 }
 
 .coin-list {
-    position: absolute;
+    position: fixed;
     right: 10%;
     bottom: 50px;
     display: flex;
+    flex-direction: row;
+    gap: 10px;
 
 }
 
@@ -80,9 +82,26 @@ strong {
 
 @media (max-width: 764px) {
     .coin-list {
-       flex-direction: row;
-       right: 0;
+
+        flex-direction: column; 
+        gap: 20px;
+        bottom: auto;   
+        right: 30px;
+        left: auto;
+        margin-top: 50px;
     }
+
+    .coin {
+       margin: 0 8px;
+       padding: 10px 30px;
+    }
+
+    .live-indicator {
+        width: 14px;
+        height: 8px;
+        margin-top: 4px;
+    }
+
 }
 
 @media (min-width: 765px) {
@@ -93,11 +112,6 @@ strong {
     
     .content h1 {
         font-size: 66px;
-    }
-
-    .coin {
-       margin: 0 8px;
-       padding: 10px 30px;
     }
 
 }
