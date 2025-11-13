@@ -50,7 +50,7 @@ strong {
 }
 
 .coin-list {
-    position: fixed;
+    position: absolute;
     right: 10%;
     bottom: 50px;
     display: flex;
