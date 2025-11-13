@@ -16,7 +16,6 @@ const Navbar = () => {
         <nav>
           <Link to="/market">Market</Link>
           <Link to="/features">Features</Link>
-          <Link to="/whitepapers">White Papers</Link>
           <Link to="/about">About Us</Link>
         </nav>
 
@@ -36,7 +35,6 @@ const Navbar = () => {
 
           <Link to="/market" onClick={() => setIsOpen(false)}>Market</Link>
           <Link to="/features" onClick={() => setIsOpen(false)}>Features</Link>
-          <Link to="/whitepapers" onClick={() => setIsOpen(false)}>White Papers</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link>
         </div>
         
